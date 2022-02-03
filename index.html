@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./scss/style.css">
     <link rel="stylesheet" href="./webfontkit-20220120-100748/stylesheet.css">
-    <title>bulbdesign</title>
+    <title>bulb</title>
 </head>
 <body>
-    <section id="nav-section"></section>
+    <section id="nav-section">
         <div class="logo">
-           <a href="#">bulb <img src="./image/bulb.svg" alt=""></a> 
+           <a href="#" class="logo-txt">bulb <img src="./image/bulb.svg" alt=""></a> 
         </div>
         <div class="toggle-container">
-            <div class="toggle">
-                <ul class="navigation">
+            <div class="toggle active">
+                <p>Menu</p>
+                <ul class="navigation active">
                     <li> <a href="">Bulb pro</a></li>
                     <li>Principles<span class="arrow-down"><img src="./image/Arrow - Down 2.svg" alt=""></span></li>
                     <li>Resources <span class="arrow-down"><img src="./image/Arrow - Down 2.svg" alt=""></span></li>
@@ -36,39 +37,50 @@
             <h1>Learn different design principles</h1>
             <p>Bulb allows you to learn the diverse design principles we have out there, and thats not all, you get to see their real life applications too.</p>
 
-            <button class="btn header-btn1"><img src="./image/Add User.svg" alt="">Create an account</button>
-            <button class="btn header-btn1"><img src="./image/3 User.svg" alt="">Join Communityt</button>
+            <div class="button-container">
+                <button class="btn header-btn1"><img src="./image/Add User.svg" alt="">Create an account</button>
+                <button class="btn header-btn1 btn2 logo-txt"><img src="./image/3 User.svg" alt="">Join Community</button>
+            </div>
+            
 
             <div class="page-down">
-                <a href="">Page down</a>
-                <img src="./image/button animation.svg" alt="">
+                <a href="#footer" class="page-down-a">Page down</a>
+                <a href="#footer"><img src="./image/button animation.svg" alt="page down"></a>
             </div>
         </div>
     </header>
 
     <section class="whatwedo">
-        <div class="whatwedo-txt">
+        <div class="whatwedo-text attachment-parent">
             <h2>What we do</h2>
+            <div class="attachment">
+                <h5 class="ampersand">&</h5>
+                <h5 class="attachment-text">How we do it</h5>
+            </div>
+            
         </div>
 
         <div class="whatwedo-container">
             <div class="wwd wwd1">
                 <hr>
-                <h3>Teach</h3>
+                <h3 style="color: hsla(346, 84%, 61%, 1);">Teach</h3>
                 <p>Reprehenderit cillum aliquip mollit pariatur cillum irure nisi veniam cupidatat ut esse dolo re enim excepteur. Amet aute aliqua dolore nulla adipisicing velit. Mollit ut velit non eu uis </p>
                 <a href="">Learn more</a>
                 <hr>
             </div>
             <div class="wwd wwd2">
                 <hr>
-                <h3>Educate</h3>
-                <p>Reprehenderit cillum aliquip mollit pariatur cillum irure nisi veniam cupidatat ut esse dolo re enim excepteur. Amet aute aliqua dolore nulla adipisicing velit. Mollit ut velit non eu uis </p>
-                <a href="">Learn more</a>
+                <div>
+                    <h3 style="color: hsla(42, 100%, 70%, 1);">Educate</h3>
+                    <p>Reprehenderit cillum aliquip mollit pariatur cillum irure nisi veniam cupidatat ut esse dolo re enim excepteur. Amet aute aliqua dolore nulla adipisicing velit. Mollit ut velit non eu uis </p>
+                    <a href="">Learn more</a>
+                </div>
+                
                 <hr>
             </div>
             <div class="wwd wwd3">
                 <hr>
-                <h3>Teach</h3>
+                <h3 style="color: hsla(164, 95%, 43%, 1);">Teach</h3>
                 <p>Reprehenderit cillum aliquip mollit pariatur cillum irure nisi veniam cupidatat ut esse dolo re enim excepteur. Amet aute aliqua dolore nulla adipisicing velit. Mollit ut velit non eu uis </p>
                 <a href="">Learn more</a>
                 <hr>
@@ -142,8 +154,12 @@
     </section>
     
     <section class="our-partners">
-        <div class="partners">
-            <h2>What we do</h2>
+        <div class="partners attachment-parent">
+            <h2>Our Partners</h2>
+            <div class="attachment">
+                <h5 class="ampersand">&</h5>
+                <h5 class="attachment-text">Work history</h5>
+            </div>
             <p>Reprehenderit cillum aliquip mollit pariatur cillum</p>
         </div>
         <div class="partners-container">
@@ -246,10 +262,10 @@
         
     </section>
 
-    <footer>
+    <footer id="footer">
         <div class="1st-footer">
             <div class="logo">
-                <a href="#">bulb <img src="./image/bulb.svg" alt=""></a> 
+                <a href="#" class="logo-txt">bulb <img src="./image/bulb.svg" alt=""></a> 
             </div>
             <div class="bulb-pro">
                 <p>Bulb pro</p>

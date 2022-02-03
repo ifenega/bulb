@@ -1,0 +1,99 @@
+$header-color:hsla(129, 67%, 48%, 0.05);
+$primary-color: linear-gradient(89.88deg, hsla(129, 67%, 48%, 1),hsla(73, 72%, 75%, 1));
+$secondary-color: hsla(0, 0%, 13%, 1);
+
+@mixin set-color($color) {
+    background: $color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    display: inline-block;
+}
+
+@mixin desktop($desktop) {
+    @media (min-width: #{$desktop}) {
+        @content 
+    }
+}
+
+.btn {
+    display: flex;
+    padding: 12.5px 10px;
+    border-radius: 4px 16px 4px 4px;
+    border: none;
+    background: $primary-color;
+    width: 100%;
+    font-size: 12px;
+}
+
+
+.btn2 {
+    position:relative;
+    display: flex !important; 
+  }
+  .btn2::before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    border-radius: 4px 16px 4px 4px;
+    padding: 1px;
+    background:$primary-color; 
+    -webkit-mask: 
+       linear-gradient(#fff 0 0) content-box, 
+       linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude; 
+  }
+
+
+  @mixin attachment() {
+    .attachment-parent {
+        // display: flex;
+        text-align: center;
+
+        h2 {
+            display: inline;
+        }
+        
+        .attachment {
+            position: relative;
+            display: inline;
+    
+            &-text {
+                position:relative;
+                padding: 2% 4%;
+    
+                
+            }
+            &-text::before {
+                content:"";
+                position:absolute;
+                top:0;
+                left:0;
+                right:0;
+                 bottom:0;
+                border-radius: 50%;
+                padding: 2px;
+                background:$primary-color; 
+                -webkit-mask: 
+                   linear-gradient(#fff 0 0) content-box, 
+                   linear-gradient(#fff 0 0);
+                -webkit-mask-composite: xor;
+                        mask-composite: exclude; 
+            }
+            
+            .ampersand {
+                position: absolute;
+                top: -8px;
+
+                @include desktop(760px) {
+                    top: -35px
+                }
+            }
+        }
+    }
+    
+  }
+
