@@ -194,9 +194,9 @@ header {
     }
 
     @include desktop(631px) {
-        .img-container {
-            // grid-column:2/3 ;
-        }
+        // .img-container {
+        //     // grid-column:2/3 ;
+        // }
         .header-text {
             grid-row: 1/2;
             margin-left: 36px;
@@ -244,6 +244,7 @@ header {
     margin-bottom: 56px;
     @include desktop(672px) {
         margin-bottom: 88px;
+        
     }
 
     .whatwedo-text {
@@ -274,12 +275,18 @@ header {
                 margin: 16px 0 24px;
                 display: inline-block;
                 font-size: 12px;
-                @include set-color($primary-color)
+                @include set-color($primary-color);
 
                 @include desktop(672px) {
                     font-size: 16px;
                 }
+            }
 
+            a::before {
+                content: "";
+                display: block;
+                background: url(../image/Arrow\ 1.svg);
+                width: 12px;
             }
         }
     }
@@ -287,4 +294,6 @@ header {
 
     
 }
+
+
 
