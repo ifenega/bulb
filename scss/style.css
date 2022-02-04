@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,6 +9,9 @@
   background: linear-gradient(89.88deg, #28cc41, #d9ed91);
   width: 100%;
   font-size: 12px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .btn2 {
@@ -712,5 +716,86 @@ header .header-text .page-down {
   width: 13px;
   height: 9px;
   margin-left: 4px;
+}
+
+.subscribe {
+  padding-top: 24px;
+  margin: 0 0 56px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.subscribe h2 {
+  padding-bottom: 32px;
+}
+
+.subscribe-container {
+  background-color: rgba(176, 84, 222, 0.1);
+  padding: 24px 40px;
+  margin: 0;
+}
+
+.subscribe-container .sc1 span {
+  padding-bottom: 48px;
+  display: block;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.subscribe-container .sc1 input[type="email"] {
+  height: 44px;
+  width: 100%;
+  margin-bottom: 12px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: none;
+}
+
+.subscribe-container .sc2 {
+  display: none;
+}
+
+@media (min-width: 672px) {
+  .subscribe span {
+    font-size: 18px;
+  }
+  .subscribe h2 {
+    padding-bottom: 56px;
+  }
+  .subscribe-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 152px;
+            column-gap: 152px;
+    padding: 56px 108px;
+    background-color: rgba(128, 237, 153, 0.12);
+  }
+  .subscribe-container .sc1 input[type="email"] {
+    margin-bottom: 24px;
+  }
+  .subscribe-container .sc2 {
+    display: initial;
+  }
+  .subscribe-container .sc2 p {
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 24px;
+  }
+  .subscribe-container .sc2 p:before {
+    content: '“';
+    display: inline-block;
+    font-size: 48px;
+  }
+  .subscribe-container .sc2 span {
+    color: rgba(255, 255, 255, 0.56);
+  }
 }
 /*# sourceMappingURL=style.css.map */

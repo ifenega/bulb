@@ -551,3 +551,86 @@ header {
     }
 }
 
+.subscribe {
+    padding-top: 24px;
+    margin: 0 0 56px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+        padding-bottom: 32px;
+    }
+    &-container {
+        background-color: hsla(280, 68%, 60%, 0.1);
+        padding: 24px 40px;
+        margin: 0;
+        .sc1 {
+            
+            span {
+                padding-bottom: 48px;
+                display: block;
+                font-size: 14px;
+                color: hsla(0, 0%, 100%, 0.7);
+            }
+            input[type="email"] {
+                height: 44px;
+                width: 100%;
+                margin-bottom: 12px;
+                background-color: hsla(0, 0%, 100%, 0.05);
+                border: none;
+            }
+        }
+
+        .sc2 {
+            display: none;
+            
+        }
+    }
+
+    @include desktop(672px) {
+
+        span {
+            font-size: 18px;
+        }
+         
+        h2 {
+            padding-bottom: 56px;
+        }
+        &-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 152px;
+            padding: 56px 108px;
+            background-color: rgba(128, 237, 153, 0.12);
+
+            .sc1 {
+                
+                input[type="email"] {
+                    margin-bottom: 24px;
+                }
+            }
+
+            .sc2 {
+                display: initial;
+
+                p {
+                    color: hsla(0, 0%, 100%, 0.4);
+                    margin-bottom: 24px;
+                }
+                p:before {
+                    content: '“';
+                    display: inline-block;
+                    font-size: 48px;
+                    
+                }
+                span {
+                    color: rgba(255, 255, 255, 0.56);
+                }
+            }
+
+            
+        }
+    }
+}
+
