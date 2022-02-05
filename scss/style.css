@@ -248,7 +248,7 @@ ul {
   color: rgba(255, 255, 255, 0.87);
 }
 
-@media (min-width: 760px) {
+@media (min-width: 830px) {
   #nav-section .toggle-container {
     display: initial;
   }
@@ -474,6 +474,9 @@ header .header-text .page-down {
       grid-template-columns: repeat(auto-fit, minmax(270px, 424px));
   grid-row-gap: 24px;
   grid-column-gap: 24px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .account-setup .account-setup-container .as .as-grid-container {
@@ -578,6 +581,18 @@ header .header-text .page-down {
   .account-setup .account-setup-container {
     margin: 56px 0 88px;
     grid-row-gap: 48px;
+  }
+  .account-setup .account-setup-container .as {
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 24px;
+  }
+}
+
+@media (min-width: 992px) {
+  .account-setup .account-setup-container .as {
+    border-radius: none;
+    background: none;
   }
 }
 
@@ -850,11 +865,6 @@ footer .last-footer-p {
   footer .st-footer {
     -webkit-column-gap: 50px;
             column-gap: 50px;
-  }
-  footer .st-footer .about {
-    -ms-grid-column: 7;
-    -ms-grid-column-span: 1;
-    grid-column: 7/8;
   }
   footer .st-footer li {
     font-size: 16px;
