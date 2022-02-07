@@ -1,4 +1,5 @@
 @import 'utilities';
+@import 'toggle';
 
 //general component
 *{
@@ -101,44 +102,6 @@ ul {
     margin: 0;
     padding: 24px;
 
-
-        li {
-            display: inline-block;
-            padding-right: 42px;
-            color: hsla(0, 0%, 100%, 0.6);
-
-            a {
-                color: hsla(0, 0%, 100%, 0.6);
-
-            }
-
-        }
-        li:last-child {
-            padding-right: 0;
-        }
-        .toggle-container {
-            display: none;
-
-            p {
-                color: hsla(0, 0%, 100%, 0.87);
-            }
-
-            @include desktop(830px) {
-                display: initial;
-
-                .toggle {
-
-                    p{
-                        display: none;
-                    }
-                }
-            }
-                
-        }
-
-        @include desktop(760px) {
-            padding: 24px 60px;
-        }
 
 }
 
