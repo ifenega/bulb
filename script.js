@@ -9,6 +9,8 @@ toggle.addEventListener('click', () => {
   toggle.classList.toggle('active')
   navigation.classList.toggle('active')
   img.classList.toggle('active')
+  toggle.classList.toggle('btn2')
+  toggle.classList.toggle('btn')
   img2.classList.toggle('active')
 
   console.log(toggle.classList)
