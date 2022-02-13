@@ -7,6 +7,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-size: 100%;
 }
 
 h1 {
@@ -53,11 +54,11 @@ body {
 }
 
 p {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: hsla(0, 0%, 100%, 0.87);
     line-height: 154%;
     @include desktop(760px) {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
 
@@ -313,7 +314,8 @@ header {
                 padding-bottom: 16px;
                 display: flex;
                 align-items: center;
-                justify-content: flex-end;
+                justify-content: space-between;
+
 
                 @include desktop(672px) {
                     justify-content: start;
@@ -360,29 +362,15 @@ header {
 
             
         }
-        .as:nth-child(even) .as-grid-container{
+        // .as:nth-child(even) .as-grid-container{
 
-            .as2{
-                padding-right: 70px;
-            }
-            .as4{
-                padding-right: 69px;
-            }
+          
+        // }
+        // .as:nth-child(odd) .as-grid-container {
+           
 
-        }
-        .as:nth-child(odd) .as-grid-container {
-            flex-direction: row-reverse;
-
-            .as1{
-                padding-left: 77px;
-            }
-            .as3{
-                padding-left: 46px;
-            }
-            .as5{
-                padding-left: 89px;
-            }
-        }
+            
+        // }
 
 
         @include desktop(672px) {
@@ -470,7 +458,8 @@ header {
     h4 {
         text-align: center;
         display: block;
-        @include set-color($primary-color)
+        @include set-color($primary-color);
+        padding-bottom: 24px;
     }
 
     &-container {
@@ -551,6 +540,7 @@ header {
                 color: hsla(0, 0%, 100%, 0.7);
             }
             input[type="email"] {
+                padding-left: 16px;
                 height: 44px;
                 width: 100%;
                 margin-bottom: 12px;

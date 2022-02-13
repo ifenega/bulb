@@ -47,7 +47,7 @@
   right: 26px;
   z-index: 20;
   width: initial;
-  padding: 4px;
+  padding: 4px 8px 4px 4px;
   -webkit-column-gap: 4px;
           column-gap: 4px;
   display: -webkit-box;
@@ -58,6 +58,17 @@
           align-items: center;
 }
 
+.toggle-container .toggle.btn2 p {
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 10px;
+}
+
+@media (min-width: 425px) {
+  .toggle-container .toggle.btn2 p {
+    font-size: 1.2em;
+  }
+}
+
 .toggle-container .toggle p {
   color: rgba(0, 0, 0, 0.87);
   font-size: 10px;
@@ -66,7 +77,6 @@
 @media (min-width: 425px) {
   .toggle-container .toggle p {
     font-size: 1.2em;
-    color: white;
   }
 }
 
@@ -88,7 +98,7 @@
   display: unset;
 }
 
-@media (min-width: 632px) {
+@media (min-width: 870px) {
   .toggle-container .toggle {
     display: none;
   }
@@ -133,7 +143,7 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media (min-width: 632px) {
+@media (min-width: 870px) {
   .toggle-container .navigation {
     position: revert;
     display: -webkit-box;
@@ -151,6 +161,7 @@
             align-items: center;
     -webkit-column-gap: 42px;
             column-gap: 42px;
+    background: initial;
   }
   .toggle-container .navigation li:hover {
     -webkit-transform: scale(1.2);
@@ -164,6 +175,7 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 100%;
 }
 
 h1 {
@@ -277,14 +289,14 @@ body .attachment-parent .attachment .ampersand {
 }
 
 p {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: rgba(255, 255, 255, 0.87);
   line-height: 154%;
 }
 
 @media (min-width: 760px) {
   p {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 }
 
@@ -571,9 +583,9 @@ header .header-text .page-down {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (min-width: 672px) {
@@ -632,33 +644,6 @@ header .header-text .page-down {
 
 .account-setup .account-setup-container .as p {
   color: rgba(255, 255, 255, 0.6);
-}
-
-.account-setup .account-setup-container .as:nth-child(even) .as-grid-container .as2 {
-  padding-right: 70px;
-}
-
-.account-setup .account-setup-container .as:nth-child(even) .as-grid-container .as4 {
-  padding-right: 69px;
-}
-
-.account-setup .account-setup-container .as:nth-child(odd) .as-grid-container {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-
-.account-setup .account-setup-container .as:nth-child(odd) .as-grid-container .as1 {
-  padding-left: 77px;
-}
-
-.account-setup .account-setup-container .as:nth-child(odd) .as-grid-container .as3 {
-  padding-left: 46px;
-}
-
-.account-setup .account-setup-container .as:nth-child(odd) .as-grid-container .as5 {
-  padding-left: 89px;
 }
 
 @media (min-width: 672px) {
@@ -752,6 +737,7 @@ header .header-text .page-down {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+  padding-bottom: 24px;
 }
 
 .moments-container {
@@ -850,6 +836,7 @@ header .header-text .page-down {
 }
 
 .subscribe-container .sc1 input[type="email"] {
+  padding-left: 16px;
   height: 44px;
   width: 100%;
   margin-bottom: 12px;
