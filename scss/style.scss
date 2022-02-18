@@ -82,9 +82,9 @@ body {
     
 }
 section {
-    margin: 24px;
+    padding: 24px;
     @include desktop(760px) {
-        margin: 60px;
+        padding: 60px;
     }
 }
 ul {
@@ -518,8 +518,8 @@ header {
 }
 
 .subscribe {
-    padding-top: 24px;
-    margin: 0 0 56px 0;
+    padding: 24px 0 56px 0;
+
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -661,3 +661,233 @@ footer {
     }
 }
 
+.testimonials {
+
+    background-color: hsla(0, 0%, 100%, 0.05);
+    margin: 0;
+
+    &-heading {
+        text-align: center;
+        p {
+            padding: 8px 0 24px 0;
+        }
+    }
+
+
+    .carousel-inner {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .carousel-item {
+            position: relative;
+            width: 279px;
+            height: 391px;
+            padding: 16px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 4px 16px 4px 4px;
+
+            .shape {
+                position: absolute;
+            }
+            .rectangle {
+                right: 0.5rem;
+                top: 0.5rem;
+            }
+            .sphere {
+                right: 0.5rem;
+                bottom: 0rem;
+            }
+            .circle {
+                left: 0.5rem;
+                bottom: 0;
+            }
+
+            .opacity-div1 {
+
+                position: absolute;
+                width: 263px;
+                height: 391px;
+                top: 8px;
+                left: 8px;
+                background-color: rgba(255, 255, 255, 0.03);
+
+            }
+            .opacity-div2 {
+
+                position: absolute;
+                width: 247px;
+                height: 391px;
+                top: 16px;
+                left: 16px;
+                background-color: rgba(255, 255, 255, 0.01);
+            }
+
+            .carousel-content {
+                
+                display: none;
+
+                img {
+                    padding-bottom: 10px;
+                }
+
+                p {
+                    color: $p-font;
+                }
+                .testimonals-position {
+                    color: hsla(0, 0%, 100%, 0.32);
+                    padding: 4px 0 16px;
+                }
+
+                &.active {
+                    display: block;
+                }
+
+                
+            }
+            .carousel-nav {
+                width: 100%;
+                padding: 20px;
+                position: absolute;
+                bottom: -56px;
+                left: 0;
+                text-align: center;
+
+                .carousel_button {
+                    width: 8px;
+                    height: 8px;
+                    display: inline-block;
+                    background-color: hsla(0, 0%, 100%, 0.2);
+                    border-radius: 50%;
+                    margin: 0 2.67px;
+                    cursor: pointer;
+
+                    &.active {
+                        background: hsla(0, 0%, 100%, 0.87);
+                    }
+
+                }
+
+                
+            }
+
+            
+
+            
+        }
+
+        .prevNext {
+            width: 100%;
+            display: flex;
+            margin-top: 52px;
+            justify-content: space-between;
+
+            .prev, .next{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 32px;
+                width: 32px;
+                border-radius: 100%;
+                border: 0;
+                background: rgba(255, 255, 255, 0.05);
+                color: #FFFFFF;
+                cursor: pointer;
+            }
+            
+        }
+
+        @include desktop(760px) {
+            .testimonials-heading {
+                margin-bottom: 40px;
+            }
+            .carousel-item {
+                width: 648px;
+                height: 500px;
+
+                .circle,.sphere,.rectangle {
+                    width: 44px;
+                }
+
+                .opacity-div1 {
+                    width: 616px;
+                    height: 500px;
+                    top: 16px;
+                    left: 16px;
+                }
+                .opacity-div2 {
+                    width: 584px;
+                    height: 500px;
+                    top: 32px;
+                    left: 32px;
+                }
+
+                .carousel-content {
+                    p {
+                        font-size: 1rem;
+                    }
+
+                    .testimonials-profile-container {
+                        display: flex;
+                        align-items: flex-end;
+                        column-gap: 56px;
+                        margin-bottom: 24px;
+                        .testimonals-position{
+                            padding-bottom: 0;
+                            font-size: 0.875rem;
+                        }
+                        img {
+                            width: 451px;
+                            height: 257px;
+                        }
+                        
+    
+                    }
+                }
+                .carousel-nav {
+                    bottom: -80px;
+                    .carousel_button {
+                        width: 12px;
+                        height: 12px;
+                    }
+                }
+            }
+
+            .prevNext {
+                svg {
+                    width: 19.09px;
+                    height: 10.47px;
+                }
+                .prev,.next {
+                    width: 56px;
+                    height: 56px;
+
+                    
+                }
+            }
+           
+            @include desktop(920px ) {
+                .prevNext {
+                    margin-top: 0;
+                    transform: translateY(-272px);
+    
+                    
+                }
+            }
+            
+
+        }
+
+        
+    }
+
+    @include desktop(760px) {
+        .testimonials-heading {
+            margin-bottom: 40px;
+        }
+    }
+    
+    
+}
