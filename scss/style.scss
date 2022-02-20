@@ -58,7 +58,7 @@ p {
     color: hsla(0, 0%, 100%, 0.87);
     line-height: 154%;
     @include desktop(760px) {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
 
@@ -102,7 +102,11 @@ ul {
     align-items: center;
     margin: 0;
     padding: 24px;
-
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: inherit;
+    z-index: 50;
 
 }
 
@@ -119,6 +123,7 @@ header {
 
         .main-img {
             width: 100%;
+            object-fit: cover;
         }
         .multiplexed-img {
             position: absolute;
@@ -302,7 +307,7 @@ header {
     .account-setup-container {
         margin: 32px 0 62px;
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(270px, 424px));
+        grid-template-columns: repeat(auto-fit,minmax(270px, 466px));
         grid-row-gap: 24px;
         grid-column-gap: 24px;
         justify-content: center;
@@ -379,7 +384,7 @@ header {
             .as {
                 border-radius: 4px;
                 background: rgba(255, 255, 255, 0.02);
-                padding: 24px;
+                padding: 24px 0;
             }
         }
         @include desktop(992px) {

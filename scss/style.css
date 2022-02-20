@@ -296,7 +296,7 @@ p {
 
 @media (min-width: 760px) {
   p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -357,6 +357,12 @@ ul {
           align-items: center;
   margin: 0;
   padding: 24px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: inherit;
+  z-index: 50;
 }
 
 header {
@@ -374,6 +380,8 @@ header .img-container {
 
 header .img-container .main-img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 header .img-container .multiplexed-img {
@@ -566,8 +574,8 @@ header .header-text .page-down {
   margin: 32px 0 62px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(270px, 424px))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(270px, 424px));
+  -ms-grid-columns: (minmax(270px, 466px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(270px, 466px));
   grid-row-gap: 24px;
   grid-column-gap: 24px;
   -webkit-box-pack: center;
@@ -654,7 +662,7 @@ header .header-text .page-down {
   .account-setup .account-setup-container .as {
     border-radius: 4px;
     background: rgba(255, 255, 255, 0.02);
-    padding: 24px;
+    padding: 24px 0;
   }
 }
 
