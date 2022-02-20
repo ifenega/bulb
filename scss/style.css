@@ -185,13 +185,13 @@ h1 {
 
 @media (min-width: 1000px) {
   h1 {
-    font-size: 4rem;
+    font-size: 64px;
   }
 }
 
 @media (min-width: 760px) {
   h1 {
-    font-size: 3rem;
+    font-size: 48px;
   }
 }
 
@@ -289,14 +289,15 @@ body .attachment-parent .attachment .ampersand {
 }
 
 p {
-  font-size: 0.75rem;
+  font-stretch: normal;
+  font-size: 12px;
   color: rgba(255, 255, 255, 0.87);
   line-height: 154%;
 }
 
 @media (min-width: 760px) {
   p {
-    font-size: 1.2rem;
+    font-size: 16px;
   }
 }
 
@@ -751,8 +752,8 @@ header .header-text .page-down {
 .moments-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(152px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(152px, 1fr));
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 24px;
 }
 
